@@ -14,11 +14,12 @@ def get_pair_number_from_color(major_color, minor_color):
     except ValueError: raise ValueError('Color index out of range')
 
 def print_color_code_reference():
-    return '\n'.join(f'{i+1}: {m} - {n}' for i, (m, n) in enumerate([(M, N) for M in MAJOR_COLORS for N in MINOR_COLORS]))
+    for i in range(1, len(MAJOR_COLORS) * len(MINOR_COLORS) + 1):
+        major, minor = get_color_from_pair_number(i)
+        print(f'{i}: {major} - {minor}')
 
 if __name__ == '__main__':
-    print(print_color_code_reference())
+    print_color_code_reference()
     assert(get_color_from_pair_number(4) == ('White', 'Brown'))
     assert(get_pair_number_from_color('Black', 'Orange') == 12)
     print('Done :)')
-
