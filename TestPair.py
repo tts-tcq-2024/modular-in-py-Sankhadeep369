@@ -1,5 +1,5 @@
-from color_pair import get_color_from_pair_number, get_pair_number_from_color
-from color_data import MAJOR_COLORS, MINOR_COLORS
+from ColorPair import get_color_from_pair_number, get_pair_number_from_color
+from ColorData import MAJOR_COLORS, MINOR_COLORS
 import io, sys
 def test_number_to_pair():
     for pair_number in range(1, 26):
