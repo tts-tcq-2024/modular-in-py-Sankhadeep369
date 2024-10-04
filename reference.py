@@ -1,4 +1,4 @@
-from color_pair import get_color_from_pair_number, color_pair_to_string
+from ColorPair import get_color_from_pair_number, color_pair_to_string
 
 def generate_reference_manual():
     """Generates a reference manual of color pairs."""
