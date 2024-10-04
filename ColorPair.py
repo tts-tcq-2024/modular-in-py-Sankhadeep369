@@ -1,4 +1,4 @@
-from color_data import MAJOR_COLORS, MINOR_COLORS
+from ColorData import MAJOR_COLORS, MINOR_COLORS
 
 def get_color_from_pair_number(pair_number):
     """Converts pair number to major and minor colors."""
