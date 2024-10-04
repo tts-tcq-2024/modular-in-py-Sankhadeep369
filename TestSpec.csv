@@ -1,0 +1,16 @@
+Test Case ID	Description	Input	Expected Output
+TC001	Validate color pair for pair number 1	pair_number = 1	('White', 'Blue')
+TC002	Validate color pair for pair number 25	pair_number = 25	('Violet', 'Slate')
+TC003	Validate color pair for middle number	pair_number = 13	('Black', 'Blue')
+TC004	Test invalid pair number (too large)	pair_number = 26	ValueError: Major index out of range
+TC005	Test invalid pair number (zero)	pair_number = 0	ValueError: Major index out of range
+TC006	Validate pair number for color White-Blue	major_color='White', minor_color='Blue'	1
+TC007	Validate pair number for color Violet-Slate	major_color='Violet', minor_color='Slate'	25
+TC008	Validate pair number for color Red-Orange	major_color='Red', minor_color='Orange'	7
+TC009	Test invalid major color (not in list)	major_color='Green', minor_color='Blue'	ValueError: Color index out of range
+TC010	Test invalid minor color (not in list)	major_color='White', minor_color='Purple'	ValueError: Color index out of range
+TC011	Print color code reference (first 5 entries)	No input	1: White - Blue, 2: White - Orange ...
+TC012	Ensure proper format of reference manual	No input	Prints all 25 pairs in correct sequence
+TC013	Ensure color pair number is always 1-25 inclusive	Inputs 1-25	Correct colors returned for all valid inputs
+TC014	Edge case for the smallest pair number	pair_number = 1	('White', 'Blue')
+TC015	Edge case for the largest pair number	pair_number = 25	('Violet', 'Slate')
